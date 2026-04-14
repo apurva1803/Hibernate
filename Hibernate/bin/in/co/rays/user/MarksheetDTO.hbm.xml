@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 8, 2024, 10:50:45 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping> 
+	<class name="in.co.rays.user.MarksheetDTO" table="ST_MARKSHEET">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property name="firstName" type="java.lang.String">
+			<column name="FIRST_NAME" />
+		</property>
+		<property name="lastName" type="java.lang.String">
+			<column name="LAST_NAME" />
+		</property>
+		<property name="physics" type="java.lang.String">
+			<column name="PHYSICS" />
+		</property>
+		<property name="chemistry" type="java.lang.String">
+			<column name="CHEMISTRY" />
+		</property>
+		<property name="maths" type="java.lang.String">
+			<column name="MATHS" />
+		</property>
+	
+	</class>
+	
+</hibernate-mapping>

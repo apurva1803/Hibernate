@@ -5,14 +5,15 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import in.co.rays.user.MarksheetDTO;
 import in.co.rays.user.UserDTO;
 
 public class TestDelete {
 
 	public static void main(String[] args) {
 
-		UserDTO dto = new UserDTO();
-		dto.setId(6);
+		MarksheetDTO dto = new MarksheetDTO();
+		dto.setId(2);
 
 		SessionFactory sf = new Configuration().configure().buildSessionFactory();
 

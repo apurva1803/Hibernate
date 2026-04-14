@@ -7,19 +7,19 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import in.co.rays.user.MarksheetDTO;
 import in.co.rays.user.UserDTO;
 
 public class TestSave {
 
 	public static void main(String[] args) {
 
-		UserDTO dto = new UserDTO();
-		dto.setFirstName("Rupali");
+		MarksheetDTO dto = new MarksheetDTO();
+		dto.setFirstName("Ameya");
 		dto.setLastName("Raut");
-		dto.setLoginId("rupali@gmail.com");
-		dto.setPassword("123");
-		dto.setDob(new Date());
-		dto.setAddress("indore");
+		dto.setPhysics("90");
+		dto.setChemistry("83");
+		dto.setMaths("89");
 
 		SessionFactory sf = new Configuration().configure().buildSessionFactory();
 

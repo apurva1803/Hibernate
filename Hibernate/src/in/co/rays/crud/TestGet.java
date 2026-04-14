@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import in.co.rays.user.MarksheetDTO;
 import in.co.rays.user.UserDTO;
 
 public class TestGet {
@@ -14,15 +15,14 @@ public class TestGet {
 
 		Session session = sf.openSession();
 
-		UserDTO dto = (UserDTO) session.get(UserDTO.class, 2);
+		MarksheetDTO dto = (MarksheetDTO) session.get(MarksheetDTO.class, 1);
 
 		System.out.print(dto.getId());
 		System.out.print("\t" + dto.getFirstName());
 		System.out.print("\t" + dto.getLastName());
-		System.out.print("\t" + dto.getLoginId());
-		System.out.print("\t" + dto.getPassword());
-		System.out.print("\t" + dto.getDob());
-		System.out.println("\t" + dto.getAddress());
+		System.out.print("\t" + dto.getPhysics());
+		System.out.print("\t" + dto.getChemistry());
+		System.out.print("\t" + dto.getMaths());
 
 		session.close();
 	}
