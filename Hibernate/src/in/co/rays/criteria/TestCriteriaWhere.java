@@ -1,4 +1,4 @@
-package TestCriteriaWhere;
+package in.co.rays.criteria;
 
 import java.util.Iterator;
 import java.util.List;
@@ -44,3 +44,4 @@ public class TestCriteriaWhere {
 		session.close();
 	}
 }
+
