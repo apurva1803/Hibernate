@@ -19,9 +19,16 @@
 		<property name="hibernate.cache.use_query_cache">true</property>
 		
 		<mapping resource="in/co/rays/user/UserDTO.hbm.xml" />
-		<mapping resource="in/co/rays/user/MarksheetDTO.hbm.xml" />
+		<mapping resource="in/co/rays/inheritance/Payment.hbm.xml" />
+		<!--
+		<mapping resource="in/co/rays/user/MarksheetDTO.hbm.xml" /> 
+		
 		<mapping resource="in/co/rays/auction/AuctionItem.hbm.xml" />
-		<mapping resource="in/co/rays/auction/Bid.hbm.xml" />
+		<mapping resource="in/co/rays/auction/Bid.hbm.xml" /> -->
+		
+		<!--
+		<mapping resource="in/co/rays/oneone/Address.hbm.xml" />
+		<mapping resource="in/co/rays/oneone/Employee.hbm.xml" />-->
 
 	</session-factory>
 </hibernate-configuration>
